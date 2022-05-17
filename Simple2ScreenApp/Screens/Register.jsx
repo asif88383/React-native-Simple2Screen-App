@@ -1,12 +1,19 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import SafeAreaViewAndroid from "../Components/SafeAreaViewAndroid";
 
-const Register = ({navigation}) => {
+const Main = ({navigation}) => {
   return (
-    <View>
+    <View style={{ marginTop: 50, backgroundColor: "grey" }}>
       <Text>Register</Text>
     </View>
   )
 }
 
-export default Register
+const Register = ({ navigation }) => {
+  return (
+    <SafeAreaViewAndroid Component={Main} navigation={navigation} title="Home" />
+  );
+};
+
+export default Register;
