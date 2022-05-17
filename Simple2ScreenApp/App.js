@@ -5,7 +5,7 @@ import Home from "./Screens/Home";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Register from "./Screens/Register";
-import Screen from "./Screens/Screen1";
+import LogIn from "./Screens/LogIn";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,8 +24,8 @@ export default function App() {
           options={{ headerStyle: { backgroundColor: "lightcyan" } }}
         />
         <Stack.Screen
-          name="Screen1"
-          component={Screen}
+          name="Login"
+          component={LogIn}
           options={{ headerStyle: { backgroundColor: "lightcyan" } }}
         />
       </Stack.Navigator>

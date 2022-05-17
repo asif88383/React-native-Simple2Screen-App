@@ -9,7 +9,6 @@ const Main = ({ navigation }) => {
     <View style={{ marginTop: 50 }}>
       <Headline style={styles.heading}>Register</Headline>
 
-      <TextInput placeholder="Full Name" style={styles.inputs} />
       <TextInput placeholder="Email" style={styles.inputs} />
       <TextInput
         placeholder="Password"
@@ -25,7 +24,7 @@ const Main = ({ navigation }) => {
         />
 
         <Text style={{color: "blue", fontSize: 16, marginTop: 10}}>
-          I agree to the terms and conditions
+          Remeber Me
         </Text>
       </View>
 

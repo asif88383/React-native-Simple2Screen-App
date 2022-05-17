@@ -30,18 +30,35 @@ const Main = ({ navigation, title }) => {
         size={160}
         style={{ marginTop: 50, alignSelf: "center" }}
       />
-      <Button
-        color="white"
-        style={{
-          margin: 30,
-          backgroundColor: "#00bcd4",
-          borderRadius: 30,
-          marginHorizontal: 50,
-        }}
-        onPress={() => navigation.navigate("Register")}
-      >
-        Register
-      </Button>
+
+      <View style={{alignSelf: "center", flexDirection: "row", marginTop:10}}>
+        <Button
+          color="white"
+          style={{
+            marginTop: 10,
+            backgroundColor: "#00bcd4",
+            borderRadius: 5,
+            width: "35%",
+            marginRight: 5,
+          }}
+          onPress={() => navigation.navigate("Register")}
+        >
+          Register
+        </Button>
+        <Button
+          color="white"
+          style={{
+            marginTop: 10,
+            backgroundColor: "#00bcd4",
+            borderRadius: 5,
+            width: "30%",
+            marginLeft: 5,
+          }}
+          onPress={() => navigation.navigate("Login")}
+        >
+          Log In
+        </Button>
+      </View>
 
       <Headline
         style={{
@@ -51,7 +68,14 @@ const Main = ({ navigation, title }) => {
       >
         About Me
       </Headline>
-      <Text style={{ alignSelf: "center", textAlign: "center", marginTop: 10, width: "65%" }}>
+      <Text
+        style={{
+          alignSelf: "center",
+          textAlign: "center",
+          marginTop: 10,
+          width: "65%",
+        }}
+      >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus
         reiciendis repellat dicta inventore architecto quaerat, beatae facere
         voluptatibus eaque libero modi perspiciatis itaque impedit odio quos
